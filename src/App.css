@@ -1,10 +1,23 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Ruigslay';
+  src: url('./assets/ruigslay/Ruigslay.otf') format('woff2'),
+       url('./assets/ruigslay/Ruigslay.otf') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Ruigslay';
+  src: url('./assets/ruigslay/Ruigslay.ttf') format('woff2'),
+       url('./assets/ruigslay/Ruigslay.ttf') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.App {
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,25 +27,35 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #fff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(30px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-contianer{
+  box-sizing: border-box;
+  width: min(95%, 900px); 
+  height: min(70%, 800px);       /* never wider than 900px, but uses most of viewport on small screens */
+  margin: 0 auto;
+  padding: clamp(30px, 3vw, 36px); /* responsive padding: 12px small -> scales with viewport -> max 36px */
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: 7px double #0e0e0e;
+  border-radius: 10%;
+  transition: padding 200ms ease;
+  font-family: 'Ruigslay', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* cake image styling */
+.cake-image {
+  width: min(80%, 600px);
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  transition: transform 300ms ease, opacity 300ms ease;
 }
