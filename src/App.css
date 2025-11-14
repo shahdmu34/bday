@@ -93,6 +93,7 @@
   border: 7px double #feb21a;
   border-radius: 10%;
   transition: padding 200ms ease;
+  box-shadow: 0 4px 24px 0 #feb21ae1;
   font-family: 'Ruigslay', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -180,7 +181,7 @@
 }
 
 .click-text {
-  font-size: calc(2px + 1vmin);
+  font-size: calc(4px + 1vmin);
   color: #134686;
   margin-top: 1px;
   font-weight: bold;
