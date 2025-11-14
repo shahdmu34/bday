@@ -104,8 +104,13 @@
   height: auto;
   margin-top: 10px;
   transition: transform 300ms ease, opacity 300ms ease;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
+.cake-image:focus {
+  outline: none;
+}
 /* star on border */
 .border-star {
   position: absolute;
