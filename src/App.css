@@ -179,3 +179,10 @@
 
 }
 
+.click-text {
+  font-size: calc(2px + 1vmin);
+  color: #134686;
+  margin-top: 1px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}

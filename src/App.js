@@ -54,6 +54,7 @@ function App() {
             onClick={handleCakeClick}
             style={{ cursor: 'pointer' }}
           />
+          <p className='click-text'>P.S. click on the cake</p>
         </div>
       </header>
     </div>
