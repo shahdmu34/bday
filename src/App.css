@@ -29,6 +29,47 @@
   }
 }
 
+
+@keyframes rotation {
+  /* preserve the translate offset so rotation doesn't shift the element */
+  from {
+    transform: translateY(-52%) rotate(0deg);
+  }
+  to {
+    transform: translateY(-52%) rotate(359deg);
+  }
+}
+
+@keyframes rotation2 {
+  /* preserve the translate offset so rotation doesn't shift the element */
+  from {
+    transform: translateY(-52%)  translateX(-52%) rotate(0deg);
+  }
+  to {
+    transform: translateY(-52%) translateX(-52%) rotate(359deg);
+  }
+}
+
+@keyframes rotation3 {
+  /* preserve the translate offset so rotation doesn't shift the element */
+  from {
+    transform: translateY(49%) rotate(0deg);
+  }
+  to {
+    transform: translateY(49%) rotate(359deg);
+  }
+}
+
+@keyframes rotation4 {
+  /* preserve the translate offset so rotation doesn't shift the element */
+  from {
+    transform: translatex(52%) translateY(-50%) rotate(0deg);
+  }
+  to {
+    transform: translatex(52%) translateY(-50%) rotate(359deg);
+  }
+}
+
 .App-header {
   background-color: #fdfaf3ef;
   min-height: 100vh;
@@ -43,7 +84,7 @@
 .main-contianer{
   position: relative;
   box-sizing: border-box;
-  width: min(95%, 900px); 
+  width: min(90%, 850px); 
   height: min(70%, 800px);       /* never wider than 900px, but uses most of viewport on small screens */
   margin: 0 auto;
   padding: clamp(30px, 3vw, 36px); /* responsive padding: 12px small -> scales with viewport -> max 36px */
@@ -74,6 +115,7 @@
   height: auto;
   z-index: 999; /* above border */
   pointer-events: none;
+  animation: rotation 20s linear infinite;
 }
 
 
@@ -87,6 +129,8 @@
   height: auto;
   z-index: 999; /* above border */
   pointer-events: none;
+  animation: rotation2 20s linear infinite;
+
 }
 
 /* star on border */
@@ -99,6 +143,7 @@
   height: auto;
   z-index: 999; /* above border */
   pointer-events: none;
+  animation: rotation2 20s linear infinite;
 }
 
 /* star on border */
@@ -111,6 +156,7 @@
   height: auto;
   z-index: 999; /* above border */
   pointer-events: none;
+  animation: rotation3 20s linear infinite;
 }
 
 /* star on border */
@@ -123,5 +169,7 @@
   height: auto;
   z-index: 999; /* above border */
   pointer-events: none;
+  animation: rotation4 20s linear infinite;
+
 }
 
