@@ -32,9 +32,10 @@ function App() {
           <img src={star} alt="star" className="border-star2" />
           <img src={star} alt="star" className="border-star3" />
           <img src={star} alt="star" className="border-star4" />
+          <img src={star} alt="star" className="border-star5" />
 
 
-          <p>HAPPY BIRTHDAY</p>
+          <p>HAPPY BIRTHDAY!</p>
           <img
             src={images[index]}
             alt={`cake-${index + 1}`}

@@ -113,3 +113,15 @@
   pointer-events: none;
 }
 
+/* star on border */
+.border-star5 {
+  position: absolute;
+  right: 0; /* position at the corner */
+  top: 90%;
+  transform: translatex(52%) translateY(-50%); /* center the star on the border line */
+  width: clamp(140px, 8vw, 120px);
+  height: auto;
+  z-index: 999; /* above border */
+  pointer-events: none;
+}
+
