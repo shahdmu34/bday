@@ -46,7 +46,7 @@ function App() {
           <img src={star} alt="star" className="border-star5" />
 
 
-          <p>HAPPY BIRTHDAY!</p>
+          <p>HAPPY 24th BIRTHDAY Saif !</p>
           <img
             src={images[index]}
             alt={`cake-${index + 1}`}
